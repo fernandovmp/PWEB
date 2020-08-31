@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Fernando Mariano Pereira" />
+        <meta
+            name="keywords"
+            content="pwa, progressive-web-apps, WebAssembly"
+        />
+        <title>PWA: Uma visão geral</title>
+    </head>
+    <body
+        style="background-color: #222"
+        text="#eee"
+        link="#0078d4"
+        vlink="darkorchid"
+    >
+        <div style="display: flex; justify-content: center">
+            <img
+                src="https://miro.medium.com/proxy/1*U01ubQ9TrE1Zow5pkGHTfw.png"
+                alt="PWA"
+                width="20%"
+                height="20%"
+            />
+        </div>
+        <h1 align="center">Uma visão geral</h1>
+        <nav align="center">
+            <a href="#caracteristicas">Características</a> •
+            <a href="#tecnologias">Tecnologias PWA</a> •
+            <a href="#empresas">Empresas que usam PWA</a> •
+            <a href="#conclusao">Conclusão</a> •
+            <a href="#referencias">Referências</a>
+        </nav>
+        <p>
+            O termo <em>Progressive Web Apps</em> (PWA) foi cunhado em 2015 pelo
+            designer Frances Berriman e pelo engenheiro do Google Chrome Alex
+            Russel para se referir a aplicações que utilizam das novas
+            funcionalidades de Web Browsers modernos para oferecer ao usuário
+            uma experiência similar a uma aplicação nativa (TANDEL & JAMADAR,
+            2018), um motivo que trouxe o PWA a tona foi a percepção da Google
+            de que a maioria dos sites são acessados por dispositivos móveis
+            (ANTUNES, 2019). O PWA tem ganhado mais destaque devido a
+            iniciativas de empresas como Google e Microsoft (ANTUNES, 2019). Uma
+            vantagem de PWA’s sobre aplicações nativas disponibilizadas em lojas
+            de aplicativos é que PWS’s podem ser adicionados aos dispositivos
+            apenas como um atalho que inicia a aplicação sem a necessidade de
+            instala-lo e pode ser compartilhado como um simples link aumentando
+            o alcance (RF1; ANTUNES, 2019; CECONI, 2020), o que é uma ótima
+            característica considerando o declínio nas instalações de
+            aplicativos em lojas de aplicativos apontado por Comscore (2017)
+            citado por Ceconi (2020).
+        </p>
+        <section id="caracteristicas">
+            <h3>CARACTERÍSTICAS DE PROGRESSIVE WEB APPS</h3>
+            <p>
+                PWA é uma metodologia de desenvolvimento que busca oferecer aos
+                usuários de aplicações nativas a mesma experiência que eles já
+                tem porém em uma aplicação WEB (ANTUNES, 2019), por isso um PWA
+                pode enviar <em>push-notifications</em>, funcionar offline, ser
+                adicionado a tela inicial ou área de trabalho do dispositivo,
+                dão suporte à splash screens e permitem a execução de código em
+                segundo plano (TANDEL & JAMADAR, 2018).
+            </p>
+            <p>
+                A Google define algumas características para PWA’s que devem ser
+                seguidas a fim de possibilitar que um PWA entregue a mesma
+                experiência de aplicação nativa à um usuário (ANTUNES, 2019),
+                estas são (TANDEL & JAMADAR, 2018; ANTUNES, 2019):
+            </p>
+            <dl>
+                <li>
+                    <strong>Progressivo:</strong> Um progressive web app deve
+                    estar acessível a qualquer um, independente do navegador
+                    usado ou do local onde se encontra no mundo.
+                </li>
+                <li>
+                    <strong>Responsivo:</strong> Tem a capacidade de se adequar
+                    a qualquer tipo de dispositivo que existem e que virão a
+                    existir.
+                </li>
+                <li>
+                    <strong>Experiência de aplicativo:</strong> Pelo estilo de
+                    navegação e interação serem os mesmos de aplicações nativas,
+                    o usuário tem a sensação de estar de fato usando um
+                    aplicativo.
+                </li>
+                <li>
+                    <strong>Independente de conectividade:</strong> Usando
+                    servisse workers PWA’s podem funcionar normalmente offline
+                    ou mesmo em conexões lentas.
+                </li>
+                <li>
+                    <strong>Instalável:</strong> Um usuário pode adicionar um
+                    PWA à sua tela principal ou área de trabalho e depois
+                    executá-lo como uma aplicação normal, sem precisar acessar
+                    uma loja de aplicativos.
+                </li>
+                <li>
+                    <strong>Descobrível:</strong> Devido aos servisse workers e
+                    o manifesto da W3C PWA’s podem ser facilmente encontrados
+                    por motores de busca.
+                </li>
+                <li>
+                    <strong>Envolvente:</strong> Funcionalidades como push
+                    notifications e a não necessidade de uma loja de aplicativos
+                    leva o usuário a se envolver mais com o uso da aplicação.
+                </li>
+                <li>
+                    <strong>Seguro:</strong> Por serem servidos via HTTPS, há a
+                    garantia que os dados não serão adulterados.
+                </li>
+                <li>
+                    <strong>Atual:</strong> PWA’s estão sempre atualizados
+                    devido ao processo de atualização dos servisse workers.
+                </li>
+            </dl>
+        </section>
+        <section id="tecnologias">
+            <h3>TECNOLOGIAS PWA</h3>
+            <p>
+                Os Progressive Web Apps são possíveis principalmente devido a
+                duas tecnologias, os servisse workers e o manifesto aplicação.
+            </p>
+            <section>
+                <strong>Service workers</strong>
+                <p>
+                    Um servisse worker nada mais é que um script que é executado
+                    separadamente da página e em segundo plano, este recurso
+                    permite experiencias offlines e dá ao desenvolvedor total
+                    controle sobre a experiencia do usuário (GAUNT, 2020). Estes
+                    scripts não podem manipular a DOM (Document Object Model),
+                    ao invés disso se comunicam com a página que podem
+                    manipulá-la respondendo mensagens enviadas por esta (GAUNT,
+                    2020).
+                </p>
+            </section>
+            <section>
+                <strong>Manifesto</strong>
+                <p>
+                    O Web App Manifest é arquivo no formato JSON que prove as
+                    informações da aplicação, algumas informações que esse
+                    manifesto prove é o nome da aplicação, descrição, ícones,
+                    língua, orientação da aplicação dentre outras (MDN, 2020).
+                </p>
+            </section>
+            <section>
+                <strong
+                    >Frameworks que possibilitam o desenvolvimento de
+                    PWA’s</strong
+                >
+                <p>
+                    Os principais frameworks front-end suportam o
+                    desenvolvimento de PWA’s, alguns exemplos desses frameworks
+                    são:
+                </p>
+                <ul>
+                    <li>
+                        <a href="https://angular.io/" target="_blank">
+                            Angular
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://ionicframework.com/" target="_blank">
+                            Ionic
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://reactjs.org/" target="_blank">
+                            ReactJs
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://vuejs.org/" target="_blank">Vue</a>
+                    </li>
+                </ul>
+            </section>
+            <section>
+                <strong>Web Assembly</strong>
+                <p>
+                    Web Assembly é uma tecnologia dos navegadores modernos que
+                    permite a execução de código compilado voltado a instruções
+                    de baixo nível tendo como linguagens de programação C, C++,
+                    Rust, entre outras (MDN, 2020). Também é possível
+                    desenvolver PWA’s com tecnologias Web Assembly, um exemplo
+                    de tecnologia que funciona em Web Assembly e tem suporte a
+                    PWA é o
+                    <a
+                        href="https://dotnet.microsoft.com/apps/aspnet/web-apps/blazor"
+                        target="_blank"
+                    >
+                        Blazor
+                    </a>
+                    que é desenvolvido pela Microsoft e permite a execução de
+                    código .NET (C# e F#) no lado do cliente. Outro framework
+                    que possibilita isso é o
+                    <a
+                        href="https://github.com/maxence-charriere/go-app"
+                        target="_blank"
+                    >
+                        Go App
+                    </a>
+                    (Go lang).
+                </p>
+            </section>
+        </section>
+        <section id="empresas">
+            <h3>EMPRESAS QUE USAM PWA</h3>
+            <p>
+                Alguns exemplos de casos de uso de PWA são o Twitter, OLX e o
+                Flipkart. Com a abordagem do PWA o Twitter lançou o Twitter Lite
+                que é consideravelmente mais leve e rápido que o aplicativo
+                comum e trouxe um aumento de 75% nos tweets enviados e
+                diminuição de 20% na taxa de rejeição (ANTUNES, 2019). Já a OLX
+                ao trazer uma versão em PWA de seu APP obteve um aumento de 250%
+                no engajamento, redução de 80% na taxa de rejeição e um aumento
+                de 146% em cliques em anúncios (ANTUNES, 2019). A Flipkart ao
+                lançar um PWA voltado ao mercado indiano devido a baixa
+                qualidade da rede que a maior parte dos usuários tinham acesso,
+                gerou um reengajamento maior de 40%, obteve uma redução de 3x o
+                uso de dados e por consequência aumentou as conversões em 70%
+                (ANTUNES, 2019).
+            </p>
+        </section>
+        <section id="conclusao">
+            <h3>CONCLUSÃO</h3>
+            <p>
+                A tecnologia de Progressive Web Apps vem ganhando cada vez mais
+                destaque, principalmente com o apoio de grandes empresas como
+                Google e Microsoft, além dos diversos casos de sucesso de
+                diversas outras empresas. Ao optar por entregar uma solução PWA
+                os recursos necessários para o desenvolvimento serão menores uma
+                vez que os principais frameworks front-end oferecem suporte à
+                esta modalidade de desenvolvimento possibilitando que apenas um
+                código fonte seja usado tanto para a aplicação WEB quanto para o
+                “aplicativo” que o usuário poderá adicionar à sua área de
+                trabalho seja mobile ou desktop.
+            </p>
+        </section>
+        <section id="referencias">
+            <h3>Referências</h3>
+            <ul>
+                <li>
+                    TANDEL, S.; JAMADAR, Abhishek. Impact of progressive web
+                    apps on web app development. International Journal of
+                    Innovative Research in Science, Engineering and Technology,
+                    v. 7, n. 9, p. 9439-9444, 2018.
+                    <a
+                        href="https://www.researchgate.net/profile/Sayali_Tandel/publication/330834334_Impact_of_Progressive_Web_Apps_on_Web_App_Development/links/5c5605d3a6fdccd6b5dde018/Impact-of-Progressive-Web-Apps-on-Web-App-Development.pdf"
+                    >
+                        Acessar
+                    </a>
+                </li>
+                <li>
+                    ANTUNES, Ana. PWA: O que são Progressive Web Apps e por que
+                    usar? 2019.
+                    <a href="https://gobacklog.com/blog/progressive-web-apps/">
+                        Acessar
+                    </a>
+                </li>
+                <li>
+                    CECONI, Laura. Experiência do usuário em Progressive Web
+                    Apps. 2019.
+                    <a
+                        href="https://repositorio.ucs.br/xmlui/bitstream/handle/11338/4780/TCC%20Laura%20Ceconi.pdf?sequence=1&isAllowed=y"
+                    >
+                        Acessar
+                    </a>
+                </li>
+                <li>
+                    GAUNT, Matt. Introdução aos service workers. 2020.
+                    <a
+                        href="https://developers.google.com/web/fundamentals/primers/service-workers?hl=pt-br"
+                    >
+                        Acessar
+                    </a>
+                </li>
+                <li>
+                    MDN. Web app manifests. 2020.
+                    <a
+                        href="https://developer.mozilla.org/en-US/docs/Web/Manifest"
+                    >
+                        Acessar
+                    </a>
+                </li>
+                <li>
+                    MDN. WebAssembly Concepts. 2020.
+                    <a
+                        href="https://developer.mozilla.org/en-US/docs/WebAssembly/Concepts"
+                    >
+                        Acessar
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </body>
+</html>
