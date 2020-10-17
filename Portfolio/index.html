@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="author" content="Fernando Mariano Pereira" />
+        <meta
+            name="keywords"
+            content="developer, desenvolvedor, desenvolvedor .NET, desenvolvedor backend"
+        />
+        <title>Fernando Mariano Pereira</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+            rel="stylesheet"
+        />
+        <link rel="stylesheet" href="css/styles.css" />
+    </head>
+    <body>
+        <main id="home" class="profile-main main-view">
+            <h1 class="profile-summary">Olá, sou o <strong>Fernando</strong> desenvolvedor .NET</h1>
+            <img 
+                class="profile-photo" 
+                src="https://avatars0.githubusercontent.com/u/45287292?s=460&u=2f0453048e3315ee222b961e1576a1d55b3b355d&v=4" 
+                alt="foto de perfil"/>
+                <div class="profile-links">
+                    <a
+                        class="icon-link"
+                        href="https://github.com/fernandovmp"
+                        target="_blank"
+                    >
+                        <span class="iconify white-icon" data-icon="mdi-github"></span>
+                    </a>
+                    <a
+                    class="icon-link"
+                        href="mailto://fernandovmp@outlook.com"
+                        target="_blank"
+                    >
+                        <span class="iconify white-icon" data-icon="mdi-email"></span>
+                    </a>
+                    <a
+                        class="icon-link"
+                        href="https://t.me/fernandovmp"
+                        target="_blank"
+                    >
+                        <span class="iconify white-icon" data-icon="mdi-telegram"></span>
+                    </a>
+                    <a
+                    class="icon-link"
+                        href="https://linkedin.com/in/fernandovmp"
+                        target="_blank"
+                    >
+                        <span class="iconify white-icon" data-icon="mdi-linkedin"></span>
+                    </a>
+                </div>
+                <div class="see-more">
+                    Veja mais o que faço
+                    <a href="#about">
+                        <span class="iconify white-icon icon-button" data-icon="mdi:arrow-down-circle-outline"></span>
+                    </a>
+                </div>
+        </main>
+        <section id="about" class="about-section main-view">
+            <h1 class="section-title">Sobre</h1>
+            <div class="about">
+                <p>
+                    Oi, meu nome é Fernando e estou cursando Análise e Desenvolvimento de Sistemas na FATEC Sorocaba.
+                </p>
+                <p>
+                    Comecei a estudar programação enquanto ainda estava fazendo o ensino médio na ETEC de Piedade para meu TCC,
+                    que foi sobre <strong>jogos empresariais no ensino de administração</strong>.
+                    Devido a esse contato que tive, inicialmente com C#, comecei a me direcionar para tecnologias Microsoft e
+                    atualmente estou me dedicando a desenvolver habilidades em desenvolvimento <strong>backend</strong>.
+                </p>
+                <p>
+                    Tecnologias que conheço:
+                    <div class="technologies-icon">
+                        <img src="assets/dotnet-core.svg" alt=".NET Core"/>
+                        <span class="iconify" data-icon="logos:c-sharp">C#</span>
+                        <span class="iconify" data-icon="logos:react">ReactJS</span>
+                        <span class="iconify" data-icon="logos:typescript-icon">TypeScript</span>
+                        <span class="iconify" data-icon="logos:git-icon">Git</span>
+                        <span class="iconify" data-icon="carbon:sql">SQL</span>
+                    </div>
+                </p>
+            </div>
+            <div class="see-more dark-text">
+                Ver projetos
+                <a href="#projects">
+                    <span class="iconify black-icon icon-button" data-icon="mdi:arrow-down-circle-outline"></span>
+                </a>
+            </div>
+        </section>
+        <section id="projects" class="projects-section main-view">
+            <h1 class="section-title">Projetos</h1>
+            <div class="projects-container">
+                <article class="project">
+                    <img class="project-banner" src="assets/statistics-calculator.png" alt=""/>
+                    <h3 class="project-title">Calculadora Estatística</h3>
+                    <summary class="project-description">
+                        Aplicação mobile para realizar cálculos estatísticos voltados para o conteúdo da aula de estatística da Fatec Sorocaba.
+                    </summary>
+                    <div class="project-links">
+                        <a
+                            class="icon-link"
+                            href="https://github.com/fernandovmp/statistics-calculator"
+                            target="_blank"
+                        >
+                            <span class="iconify black-icon" data-icon="mdi-github"></span>
+                        </a>
+                    </div>
+                </article>
+                <article class="project">
+                    <img class="project-banner" src="assets/Board.jpg" alt="Kanban board"/>
+                    <h3 class="project-title">Kanban Board</h3>
+                    <summary class="project-description">
+                        Quadro Kanban que possibilita organizar e gerenciar tarefas, podendo atribui-las a membros do
+                        quadro.
+                    </summary>
+                    <div class="project-links">
+                        <a
+                            class="icon-link"
+                            href="https://github.com/fernandovmp/kanban-board"
+                            target="_blank"
+                        >
+                            <span class="iconify black-icon" data-icon="mdi-github"></span>
+                        </a>
+                        <a href="https://kanban-board-web.web.app/" target="_blank">Demonstração</a>
+                    </div>
+                </article>
+                <article class="project">
+                    <img class="project-banner" src="assets/todo-list.jpg" alt=""/>
+                    <h3 class="project-title">To-Do List</h3>
+                    <summary class="project-description">Aplicação web responsiva de lista de tarefas.</summary>
+                    <div class="project-links">
+                        <a
+                            class="icon-link"
+                            href="https://github.com/fernandovmp/todo-list"
+                            target="_blank"
+                        >
+                            <span class="iconify black-icon" data-icon="mdi-github"></span>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <script src="js/index.js"></script>
+        <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+    </body>
+</html>
