@@ -1,0 +1,33 @@
+body {
+    background-color: whitesmoke;
+}
+
+.title {
+    text-align: center;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin: 0 40px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+}
+
+.research {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+}

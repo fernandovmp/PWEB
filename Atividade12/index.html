@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 12</title>
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+    <h1 class="title">Formulário Principal</h1>
+    <div></div>
+    <form class="form" id="form" nome="form">
+        <label class="form-field" for="name">
+            Nome
+            <input id="name" name="name"/>
+        </label>
+        <label class="form-field" for="email">
+            Email
+            <input id="email" name="email"/>
+        </label>
+        <label class="form-field" for="comment">
+            Comentário
+            <textarea id="comment" name="comment"></textarea>
+        </label>
+        <div class="research">
+            <h3>Pesquisa</h3>
+            <em>Primeira vez na página?</em>
+            <div class="form-buttons-container">
+                <label for="researchYes">
+                    <input type="radio" id="researchYes" name="researchYes" onchange="selectYes()"/>
+                    Sim
+                </label>
+                <label for"researchNo>
+                    <input type="radio" id="researchNo" name="researchNo" onchange="selectNo()"/>
+                    Não
+                </label>
+            </div>
+        </div>
+        <div class="form-buttons-container">
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+    <script src="js/main.js"></script>
+</body>
+</html>
